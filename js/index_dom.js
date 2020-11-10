@@ -19,8 +19,9 @@ d.addEventListener('DOMContentLoaded', () => {
   );
   countDown('countdown', 'February 20, 2021 02:23:00', 'Feliz cumpleaños 🎉');
   scrollTopBtn('.scroll-top-btn');
-  darkTheme('.dark-theme-btn', 'dark-mode');
 });
+
+darkTheme('.dark-theme-btn', 'dark-mode');
 
 d.addEventListener('keydown', (e) => {
   shortCuts(e);

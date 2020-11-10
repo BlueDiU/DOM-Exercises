@@ -10,7 +10,7 @@
 }
 
 html {
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
   box-sizing: border-box;
   font-family: var(--main-font);
   font-style: var(--font-size);
@@ -240,5 +240,5 @@ img {
 .dark-mode {
   background-color: var(--second-color);
   color: var(--main-color);
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
