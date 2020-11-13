@@ -30,7 +30,7 @@ export function darkTheme(btn, classDark) {
     }
   });
 
-  d.addEventListener('DOMContentLoaded', (e) => {
+  d.addEventListener('DOMContentLoaded', () => {
     if (ls.getItem('theme') === null) ls.setItem('theme', 'light');
 
     if (ls.getItem('theme') === 'light') lightMode();

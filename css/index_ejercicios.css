@@ -242,3 +242,24 @@ img {
   color: var(--main-color);
   transition: all 400ms ease-in-out;
 }
+
+/* Respovise js */
+
+#youtube,
+#gmaps {
+  font-size: 23px;
+  color: var(--main-color);
+  margin: 20px;
+}
+
+#youtube a,
+#gmaps a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+#youtube a:hover,
+#gmaps a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
