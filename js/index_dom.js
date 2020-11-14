@@ -5,6 +5,7 @@ import { countDown } from './dom/cuenta_regresiva.js';
 import { scrollTopBtn } from './dom/btn_scroll.js';
 import { darkTheme } from './dom/dark_theme.js';
 import { resposiveMedia } from './dom/objeto_resposive.js';
+import { resposiveTester } from './dom/prueba_responsive.js';
 
 //./dom/menu_hamburger.js
 
@@ -37,6 +38,8 @@ d.addEventListener('DOMContentLoaded', () => {
     ` <a href="https://goo.gl/maps/dYm24MCJh3YYBhQP8"  target="_blank" >Ver Mapa</a> `,
     `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62022.61447860239!2d-89.24443494427737!3d13.693393743140744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633067b411775d%3A0x1f75978893fb5c96!2sSan%20Salvador!5e0!3m2!1sen!2ssv!4v1605228881044!5m2!1sen!2ssv" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`
   );
+
+  resposiveTester('responsive-tester');
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
