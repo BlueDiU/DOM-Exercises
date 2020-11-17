@@ -6,6 +6,7 @@ import { scrollTopBtn } from './dom/btn_scroll.js';
 import { darkTheme } from './dom/dark_theme.js';
 import { resposiveMedia } from './dom/objeto_resposive.js';
 import { resposiveTester } from './dom/prueba_responsive.js';
+import { userDeviceInfo } from './dom/deteccion_dispositivos.js';
 
 //./dom/menu_hamburger.js
 
@@ -40,6 +41,8 @@ d.addEventListener('DOMContentLoaded', () => {
   );
 
   resposiveTester('responsive-tester');
+
+  userDeviceInfo('user-device');
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
