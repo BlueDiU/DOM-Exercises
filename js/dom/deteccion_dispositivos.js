@@ -39,7 +39,6 @@ export function userDeviceInfo(id) {
       },
     };
 
-  console.log(isMobile.any());
   $id.innerHTML = `
     <ol>
       <li>User Agent: ${ua}</li>

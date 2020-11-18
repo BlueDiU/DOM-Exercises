@@ -7,6 +7,7 @@ import { darkTheme } from './dom/dark_theme.js';
 import { resposiveMedia } from './dom/objeto_resposive.js';
 import { resposiveTester } from './dom/prueba_responsive.js';
 import { userDeviceInfo } from './dom/deteccion_dispositivos.js';
+import { networkStatus } from './dom/deteccion_red.js';
 
 //./dom/menu_hamburger.js
 
@@ -46,6 +47,8 @@ d.addEventListener('DOMContentLoaded', () => {
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
+
+networkStatus();
 
 d.addEventListener('keydown', (e) => {
   shortCuts(e);
