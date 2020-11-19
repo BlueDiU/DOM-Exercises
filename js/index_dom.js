@@ -8,6 +8,8 @@ import { resposiveMedia } from './dom/objeto_resposive.js';
 import { resposiveTester } from './dom/prueba_responsive.js';
 import { userDeviceInfo } from './dom/deteccion_dispositivos.js';
 import { networkStatus } from './dom/deteccion_red.js';
+import { webcam } from './dom/deteccion_webcam.js';
+import { getGeoLocation } from './dom/geolocalizacion.js';
 
 //./dom/menu_hamburger.js
 
@@ -44,6 +46,10 @@ d.addEventListener('DOMContentLoaded', () => {
   resposiveTester('responsive-tester');
 
   userDeviceInfo('user-device');
+
+  webcam('webcam');
+
+  getGeoLocation('geolocalition');
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
