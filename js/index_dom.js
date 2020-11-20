@@ -10,6 +10,7 @@ import { userDeviceInfo } from './dom/deteccion_dispositivos.js';
 import { networkStatus } from './dom/deteccion_red.js';
 import { webcam } from './dom/deteccion_webcam.js';
 import { getGeoLocation } from './dom/geolocalizacion.js';
+import { searchFilters } from './dom/filtro_busquedas.js';
 
 //./dom/menu_hamburger.js
 
@@ -50,6 +51,8 @@ d.addEventListener('DOMContentLoaded', () => {
   webcam('webcam');
 
   getGeoLocation('geolocalition');
+
+  searchFilters('.card-filter', '.card');
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
