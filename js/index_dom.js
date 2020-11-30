@@ -11,6 +11,8 @@ import { networkStatus } from './dom/deteccion_red.js';
 import { webcam } from './dom/deteccion_webcam.js';
 import { getGeoLocation } from './dom/geolocalizacion.js';
 import { searchFilters } from './dom/filtro_busquedas.js';
+import { draw } from './dom/sorteo.js';
+import { slider } from './dom/carousel.js';
 
 //./dom/menu_hamburger.js
 
@@ -53,6 +55,10 @@ d.addEventListener('DOMContentLoaded', () => {
   getGeoLocation('geolocalition');
 
   searchFilters('.card-filter', '.card');
+
+  draw('#winner-btn', '.player');
+
+  slider();
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
