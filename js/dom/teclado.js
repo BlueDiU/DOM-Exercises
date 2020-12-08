@@ -40,10 +40,14 @@ export function moveBall(e, ball, stage) {
 }
 
 export function shortCuts(e) {
-  /* console.log(e.type)
-    console.log(e.key, e.keyCode); */
+  console.log(e.type);
+  console.log(e.key, e.keyCode);
 
   if (e.key === 'a' && e.ctrlKey) {
     alert('NOOOOOOOOOOOO');
+  }
+
+  if (e.ctrlKey && e.key === 'y') {
+    alert('Maestro sensei');
   }
 }

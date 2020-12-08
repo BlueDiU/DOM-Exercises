@@ -13,6 +13,7 @@ import { getGeoLocation } from './dom/geolocalizacion.js';
 import { searchFilters } from './dom/filtro_busquedas.js';
 import { draw } from './dom/sorteo.js';
 import { slider } from './dom/carousel.js';
+import { scrollSpy } from './dom/scroll_espia.js';
 
 //./dom/menu_hamburger.js
 
@@ -59,6 +60,8 @@ d.addEventListener('DOMContentLoaded', () => {
   draw('#winner-btn', '.player');
 
   slider();
+
+  scrollSpy();
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
