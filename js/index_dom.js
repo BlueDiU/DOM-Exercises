@@ -14,6 +14,7 @@ import { searchFilters } from './dom/filtro_busquedas.js';
 import { draw } from './dom/sorteo.js';
 import { slider } from './dom/carousel.js';
 import { scrollSpy } from './dom/scroll_espia.js';
+import { smartVideo } from './dom/video_inteligente.js';
 
 //./dom/menu_hamburger.js
 
@@ -62,6 +63,8 @@ d.addEventListener('DOMContentLoaded', () => {
   slider();
 
   scrollSpy();
+
+  smartVideo();
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
