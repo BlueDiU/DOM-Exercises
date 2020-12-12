@@ -15,6 +15,8 @@ import { draw } from './dom/sorteo.js';
 import { slider } from './dom/carousel.js';
 import { scrollSpy } from './dom/scroll_espia.js';
 import { smartVideo } from './dom/video_inteligente.js';
+import { contactFormValidations } from './dom/validaciones_form.js';
+import { speechReader } from './dom/narrador.js';
 
 //./dom/menu_hamburger.js
 
@@ -65,11 +67,15 @@ d.addEventListener('DOMContentLoaded', () => {
   scrollSpy();
 
   smartVideo();
+
+  contactFormValidations();
 });
 
 darkTheme('.dark-theme-btn', 'dark-mode');
 
 networkStatus();
+
+speechReader();
 
 d.addEventListener('keydown', (e) => {
   shortCuts(e);

@@ -38,6 +38,7 @@
             <a href="#section12" data-scroll-spy>Responsive Slider</a>
             <a href="#section13" data-scroll-spy>Video inteligente</a>
             <a href="#section14" data-scroll-spy>Validacion de formularios</a>
+            <a href="#section15" data-scroll-spy>Narrador de Voz</a>
         </nav>
     </aside>
 
@@ -176,7 +177,8 @@
         </section>
         <section id="section14" class="section">
             <h2>Validacion de formularios</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/reycoc2311@gmail.com" method="POST"
+                target="_blank">
                 <legend>Envíanos tus comentarios</legend>
                 <input type="text" name="name" placeholder="Escribe tu nombre"
                     title="Nombre sólo acepta letras y espacios en blanco" required
@@ -185,15 +187,25 @@
                     pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                 <input type="text" name="subject" placeholder="Asunto a tratar" required title="El asunto es requerido">
                 <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" required
-                    data-pattern="^.{1,255}$"></textarea>
+                    data-pattern="^.{1,255}$" title="Tu comenterio no debe exceder los 255 caracteres"></textarea>
                 <input type="submit" value="Enviar">
-                <div class="contact-form-loader">
+                <div class="contact-form-loader none">
                     <img src="assets/three-dots.svg" alt="Cargando">
                 </div>
                 <div class="contact-form-response none">
                     <p>Los datos han sido enviados</p>
                 </div>
             </form>
+        </section>
+        <section id="section15" class="section">
+            <h2>Narrador de Voz</h2>
+            <select name="" id="speech-select">
+                <option value="">--Elige una voz--</option>
+            </select>
+            <br><br>
+            <textarea name="" id="speech-text" placeholder="Ingresa texto para leerlo" cols="50" rows="5"></textarea>
+            <br><br>
+            <button id="speech-btn">Leer Texto</button>
         </section>
     </main>
 

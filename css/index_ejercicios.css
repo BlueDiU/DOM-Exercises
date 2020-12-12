@@ -495,7 +495,7 @@ video {
 textarea {
   font-size: 1rem;
   font-family: sans-serif;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: 0;
   border: thin solid rgb(197, 196, 196);
 }
@@ -534,7 +534,8 @@ textarea {
 
 .contact-form-error.is-active {
   display: block;
-  animation: show-message 1s 1 normal 0s ease-out-both;
+  /* animation: show-message 1s 1 normal 0s ease-out-both; */
+  animation: show-message 1s 1 normal 0s ease-in-out;
 }
 
 .none {
